@@ -23,10 +23,16 @@ const quotesData = [
 ]
 
 //* get all the constants
-const quoteText = document.getElementById("quoteText");
+const quoteUl = document.getElementById('quoteText');
+// quoteText.style.color = 'white';
+const currentQuote = 0;
+
 
 loadQuotes();
 
 function loadQuotes() {
-    quoteText.textContent = 'This is a quote';
+    const currentQuoteData = quotesData[currentQuote];
+    const quoteText = document.createElement("li");
+    quoteText = currentQuoteData.quote;
+    quoteUl.appendChild(quoteText);
 }

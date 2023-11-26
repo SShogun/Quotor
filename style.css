@@ -137,6 +137,14 @@ nav ul > li > a:hover {
     justify-content: center;
     align-items: flex-end;
 }
+.quotesDisplaySectionList {
+    list-style-type: none;
+}
+#quoteText {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+
+}
 #generateBtn {
     height: 2.5rem;
     width: 7.5rem;
