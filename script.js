@@ -23,16 +23,19 @@ const quotesData = [
 ]
 
 //* get all the constants
-const quoteUl = document.getElementById('quoteText');
-// quoteText.style.color = 'white';
-const currentQuote = 0;
+const quoteText = document.getElementById('quoteText');
+const generateBtn = document.getElementById('generateBtn');
+let currentQuote = 0;
 
+// quoteText.innerText = currentQuoteData.quote;
 
-loadQuotes();
+generateBtn.addEventListener('click', function() {
+    const currentQuoteData = quotesData[currentQuote]; 
+    quoteText.innerText = currentQuoteData.quote;
+    currentQuote++;
 
-function loadQuotes() {
-    const currentQuoteData = quotesData[currentQuote];
-    const quoteText = document.createElement("li");
-    quoteText = currentQuoteData.quote;
-    quoteUl.appendChild(quoteText);
-}
+    console.log(currentQuote, quotesData.length);
+    if(currentQuote == quotesData.length) {
+        quoteText.innerText = "You have ran out of free quotes!"
+    }
+});

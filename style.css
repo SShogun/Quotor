@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Roboto:wght@100;300;400;500;700;900&family=Satisfy&display=swap');
 * {
     margin: 0;
     box-sizing: border-box;
@@ -10,17 +9,14 @@ body {
 }
 :root {
     --bbcgtext: #fff;
-    --bg1: #05161A;
+    --bg1: #99B080;
     --wbcgtext: #000;
 }
 /* ! classes */
 .lists {
     list-style-type: none;
 }
-.mainText {
-    font-family: 'Alex Brush', cursive;
-    
-}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -28,7 +24,7 @@ nav {
     min-width: 100%;
     height: 6rem;
     /* border: 2px solid black; */
-    border-bottom: 2px solid #072e33;
+    border-bottom: 2px solid #748E63;
     background-color: var(--bg1);
 }
 nav > p {
@@ -69,8 +65,10 @@ nav ul > li > a {
     border-radius: 15px;
 }
 nav ul > li > a:hover {
-    border: 2px solid #0c7075;
-    box-shadow: 0px 0px 5px 2px #0c7075;
+    /* border: 2px solid #787878; */
+    /* box-shadow: 0px 0px 5px 2px #b2b2b2; */
+    /* color: #000; */
+    background-color: #5d7050;
     transform: translateZ(2px);
     transition-delay: 50ms smooth;
     /* background-color: #0c7075; */
@@ -94,7 +92,7 @@ nav ul > li > a:hover {
     /* padding: none; */
     width: 100%;
     padding: 0;
-
+    
 }
 #quotesDisplaySection {
     border: 2px solid #0c707550;
@@ -106,44 +104,45 @@ nav ul > li > a:hover {
 }
 
 .quotes-main > ul > li:nth-child(1) {
-    text-align: center;
-}
-.quotes-main > ul > li:nth-child(2) {
+    /* text-align: center; */
+    height: 9rem;
     display: flex;
+    align-items: flex-start;
     justify-content: center;
-    align-items: top;
-    padding-top: 2rem;
-    height: 4rem;
 }
-.quotes-main > ul > li:nth-child(3) {
+
+.quotes-main > ul > li:nth-child(2) {
     width: 100%;
+    height: 10rem;
 }
 .mainText {
-    font-size: 8rem;
+    font-size: 5rem;
+    font-family: 'Satisfy', cursive;
+    /* padding-bottom: 5rem; */
 }
-#subText {
-    font-size: 2rem;
-}
+
 #quotesDisplaySection {
     height: 10rem;
     width: 50%;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    padding: 8px 0 0 10px;
+    padding: 8px 5px 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.quotes-main > ul > li:nth-child(4) {
+.quotes-main > ul > li:nth-child(3) {
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
-.quotesDisplaySectionList {
-    list-style-type: none;
-}
+
 #quoteText {
     font-size: 1.2rem;
     font-family: 'Work Sans', sans-serif;
-
+    text-align: center;
+    line-height: 1.5;
 }
 #generateBtn {
     height: 2.5rem;
@@ -155,7 +154,8 @@ nav ul > li > a:hover {
 }
 #generateBtn:hover {
     scale: 1.08;
-    box-shadow: 0px 0px 5px 2px #0c7075;
+    background-color: #5d7050;
+    /* box-shadow: 0px 0px 5px 2px #0c7075; */
     transition: ease-in-out 0.1s;
     transition: scale 0.02s;
 }
