@@ -9,7 +9,7 @@ body {
 }
 :root {
     --bbcgtext: #fff;
-    --bg1: #99B080;
+    --bg1: #20C997;
     --wbcgtext: #000;
 }
 /* ! classes */
@@ -24,7 +24,7 @@ nav {
     min-width: 100%;
     height: 6rem;
     /* border: 2px solid black; */
-    border-bottom: 2px solid #748E63;
+    border-bottom: 2px solid #f2f2f2;
     background-color: var(--bg1);
 }
 nav > p {
@@ -68,7 +68,7 @@ nav ul > li > a:hover {
     /* border: 2px solid #787878; */
     /* box-shadow: 0px 0px 5px 2px #b2b2b2; */
     /* color: #000; */
-    background-color: #5d7050;
+    background-color: #158463;
     transform: translateZ(2px);
     transition-delay: 50ms smooth;
     /* background-color: #0c7075; */
@@ -94,9 +94,9 @@ nav ul > li > a:hover {
     padding: 0;
     
 }
-#quotesDisplaySection {
-    border: 2px solid #0c707550;
-}
+/* #quotesDisplaySection {
+    border: 2px solid #5f919350;
+} */
 .quotes-main > ul > li {
     height: 7rem;
     min-width: 100%;
@@ -125,7 +125,7 @@ nav ul > li > a:hover {
     height: 10rem;
     width: 50%;
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     padding: 8px 5px 5px 10px;
     display: flex;
@@ -154,7 +154,7 @@ nav ul > li > a:hover {
 }
 #generateBtn:hover {
     scale: 1.08;
-    background-color: #5d7050;
+    background-color: #158463;
     /* box-shadow: 0px 0px 5px 2px #0c7075; */
     transition: ease-in-out 0.1s;
     transition: scale 0.02s;

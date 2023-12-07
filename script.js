@@ -36,6 +36,9 @@ generateBtn.addEventListener('click', function() {
 
     console.log(currentQuote, quotesData.length);
     if(currentQuote == quotesData.length) {
-        quoteText.innerText = "You have ran out of free quotes!"
+        quoteText.innerText = "You have ran out of free quotes!";
+        generateBtn.style.width = '150px'; 
+        generateBtn.style.boxShadow = '0px 0px 129px 0px rgba(235,235,235,0.39)'; 
+        generateBtn.innerText = "Login / Sign Up";
     }
 });
