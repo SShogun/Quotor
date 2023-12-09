@@ -2,15 +2,14 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    color: white;
+    color: black;
 }
 body {
     font-family: 'Work Sans', sans-serif;
 }
 :root {
-    --bbcgtext: #fff;
-    --bg1: #20C997;
-    --wbcgtext: #000;
+    --bbcgtext: #000;
+    --bg1: #f2f2f2;
 }
 /* ! classes */
 .lists {
@@ -42,7 +41,7 @@ nav > ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    min-width: 90%;
+    min-width: 80%;
 }
 nav ul > li {
     display: flex;
@@ -58,22 +57,43 @@ nav ul > li > a {
     color: var(--bbcgtext);
     /* position: absolute; */
     padding: 2.5px 6px 3.5px 6px;
-    border: 2px solid #0c70750c;
+    /* border: 2px solid #0c70750c; */
     transition: box-shadow 198ms ease-out 10ms;
     border-radius: 15px;
+    /* position: absolute; */
 }
 nav ul > li > a:hover {
     /* border: 2px solid #787878; */
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
-    /* color: #000; */
-    background-color: #158463;
+    border: none;
     transform: translateZ(2px);
     transition-delay: 195ms smooth;
-    /* background-color: #0c7075; */
     transform: translateX(-2.00px);
     transform: translateY(3.00px);
-    /* text-decoration: underline #0c7075; */
-    /* border: 2px solid #0c7075; */
+    /* position: relative; */
+    /* padding: 10% 0%; */
+}
+nav > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    cursor: auto;
+    text-decoration: none;
+}
+#themeBtn {
+    font-size: 1.5rem;
+    /* border: 1px solid #000; */
+    padding: .6rem .8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 400ms ease-out 30ms;
+    transition: color 800ms ease-out;
+    /* transition: background 400ms ease-in-out 30ms; */
+}
+#themeBtn:hover {
+    background: #000;
+    color: white;
 }
 .quotes-container {
     width: 100%;
@@ -131,7 +151,7 @@ nav ul > li > a:hover {
     height: 12rem;
     width: 50%;
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     padding: 8px 5px 5px 10px;
     display: flex;
@@ -155,16 +175,18 @@ nav ul > li > a:hover {
     width: 7.5rem;
     border-radius: 22px;
     border: none;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
     font-size: 1.2rem;
-    transition: box-shadow 198ms ease-out 10ms;
+    transition: box-shadow 190ms ease-out 2ms;
 }
 #generateBtn:hover {
     scale: 1.08;
-    background-color: #107658;
+    /* background-color: #107658; */
     box-shadow: 0px 0px 5px 2px #0c7075;
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.7);
     transition-delay: 195ms smooth;
+    /* padding: 0 10px 0 10px; */
 }
 .popular-quotes {
     height: 10rem;

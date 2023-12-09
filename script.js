@@ -42,3 +42,25 @@ generateBtn.addEventListener('click', function() {
         generateBtn.innerText = "Login / Sign Up";
     }
 });
+
+
+// theme change UI button
+const toggle = document.getElementById('themeBtn');
+const nav = document.querySelector('nav');
+const main = document.getElementById('prime-card');
+const container = document.getElementById('container');
+
+
+toggle.addEventListener('click', function() {
+    this.classList.toggle('fa-moon');
+    if(this.classList.toggle('fa-sun')) {
+        nav.style.backgroundColor='black';
+        main.style.backgroundColor='black';
+        container.style.backgroundColor='#EC3636';
+    }else{
+        nav.style.backgroundColor='#f2f2f2';
+        main.style.backgroundColor='#f2f2f2';
+        container.style.backgroundColor='#001F3F'
+    }
+    
+});
