@@ -21,7 +21,7 @@ nav {
     justify-content: space-between;
     /* flex-direction: row; */
     min-width: 100%;
-    height: 11vh;
+    height: 10vh;
     /* border: 2px solid black; */
     border-bottom: 2px solid #f2f2f2;
     background-color: var(--bg1);
@@ -35,6 +35,7 @@ nav > p {
     justify-content: center;
     align-items: top;
     padding-left: 4rem;
+    user-select: none;
 }
 nav > ul {
     list-style-type: none;
@@ -80,6 +81,24 @@ nav > a {
     width: 10%;
     cursor: auto;
     text-decoration: none;
+}
+#lsgn-sec {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 5;
+}
+#signupBtn {
+    background-color: black;
+    color: white;
+    padding: 4px 6px;
+    position: relative;
+    right: 6rem;
+    transition: box-shadow .5s ease-out 10ms;
+}
+#signupBtn:hover {
+    background-color: #1a1a1a;
+    color: white;
 }
 #themeBtn {
     font-size: 1.5rem;
@@ -143,6 +162,7 @@ nav > a {
 }
 .mainText {
     font-size: 5rem;
+    user-select: none;
     font-family: 'Satisfy', cursive;
     /* padding-bottom: 5rem; */
 }
