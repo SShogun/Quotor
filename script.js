@@ -49,6 +49,14 @@ const toggle = document.getElementById('themeBtn');
 const nav = document.querySelector('nav');
 const main = document.getElementById('prime-card');
 const container = document.getElementById('container');
+// const navUl = document.getElementById('navUl');
+const navTitle = document.getElementById('nav-title');
+const mainTitle = document.getElementById('mainTitle');
+const homeBtn = document.getElementById('homeBtn');
+const genBtn = document.getElementById('genBtn');
+const loginBtn = document.getElementById('loginBtn')
+const quoteBox = document.getElementById('quotesDisplaySection');
+
 
 
 toggle.addEventListener('click', function() {
@@ -57,10 +65,47 @@ toggle.addEventListener('click', function() {
         nav.style.backgroundColor='black';
         main.style.backgroundColor='black';
         container.style.backgroundColor='#EC3636';
+        toggle.style.backgroundColor="white";
+        navTitle.style.color = 'white';
+        mainTitle.style.color = 'white';
+        homeBtn.style.color = 'white';
+        homeBtn.style.border = 'white';
+        genBtn.style.color = 'white';
+        loginBtn.style.color = 'white';
+        homeBtn.addEventListener('mouseover',()=>{
+            homeBtn.style.boxShadow = '0px 0px 2px 2px #f5f5f5'
+        });
+        homeBtn.addEventListener('mouseout',()=>{
+            homeBtn.style.boxShadow = ''
+        });
+        genBtn.addEventListener('mouseover',()=>{
+            genBtn.style.boxShadow = '0px 0px 2px 2px #f5f5f5'
+        });
+        genBtn.addEventListener('mouseout',()=>{
+            genBtn.style.boxShadow = ''
+        });loginBtn.addEventListener('mouseover',()=>{
+            loginBtn.style.boxShadow = '0px 0px 2px 2px #f5f5f5'
+        });
+        loginBtn.addEventListener('mouseout',()=>{
+            loginBtn.style.boxShadow = ''
+        });
+        generateBtn.style.color = 'black';
+        generateBtn.style.backgroundColor = 'white';
+        quoteBox.style.backgroundColor = 'rgba(50, 50, 50, 0.2)';
+        quoteText.style.color = 'white';
     }else{
         nav.style.backgroundColor='#f2f2f2';
         main.style.backgroundColor='#f2f2f2';
         container.style.backgroundColor='#001F3F'
+        navTitle.style.color = 'black';
+        mainTitle.style.color = 'black';
+        homeBtn.style.color = 'black';
+        genBtn.style.color = 'black';
+        loginBtn.style.color = 'black';
+        generateBtn.style.backgroundColor = 'black';
+        generateBtn.style.color = 'white';
+        quoteBox.style.backgroundColor = 'rgba(0, 0, 0, 0.2)';
+        quoteText.style.color = 'black'
     }
     
 });

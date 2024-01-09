@@ -1,4 +1,6 @@
 todo:
 9/12/23:
 - work on login/singup page
-- 
+
+9/1/24
+- work on theme swtich button
