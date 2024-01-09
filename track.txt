@@ -1,6 +1,9 @@
 todo:
 9/12/23:
-- work on login/singup page
+- work on login/singup page :!pending
 
 9/1/24
-- work on theme swtich button
+- work on theme swtich button & Dark theme  :completed
+- work on hover animation of navbar links
+- work on theme switch button 
+- align login/signup button on more right side
