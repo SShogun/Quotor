@@ -62,10 +62,10 @@ const quoteBox = document.getElementById('quotesDisplaySection');
 toggle.addEventListener('click', function() {
     this.classList.toggle('fa-moon');
     if(this.classList.toggle('fa-sun')) {
+        // dark theme
         nav.style.backgroundColor='black';
         main.style.backgroundColor='black';
-        container.style.backgroundColor='#EC3636';
-        toggle.style.backgroundColor="white";
+        container.style.backgroundColor='#8F43EE';
         navTitle.style.color = 'white';
         mainTitle.style.color = 'white';
         homeBtn.style.color = 'white';
@@ -91,12 +91,21 @@ toggle.addEventListener('click', function() {
         });
         generateBtn.style.color = 'black';
         generateBtn.style.backgroundColor = 'white';
+        generateBtn.addEventListener('mouseover',()=>{
+            generateBtn.style.boxShadow = '0px 0px 1px 2px gray'
+        });
+        generateBtn.addEventListener('mouseout',()=>{
+            generateBtn.style.boxShadow = ''
+        });
         quoteBox.style.backgroundColor = 'rgba(50, 50, 50, 0.2)';
         quoteText.style.color = 'white';
+        toggle.style.color = 'yellow';
+        toggle.style.backgroundColor = 'black';        
     }else{
+        // Light theme
         nav.style.backgroundColor='#f2f2f2';
         main.style.backgroundColor='#f2f2f2';
-        container.style.backgroundColor='#001F3F'
+        container.style.backgroundColor='#69c8ee'
         navTitle.style.color = 'black';
         mainTitle.style.color = 'black';
         homeBtn.style.color = 'black';
@@ -106,6 +115,24 @@ toggle.addEventListener('click', function() {
         generateBtn.style.color = 'white';
         quoteBox.style.backgroundColor = 'rgba(0, 0, 0, 0.2)';
         quoteText.style.color = 'black'
+        toggle.style.backgroundColor = '#f2f2f2';
+        toggle.style.color = 'black';
+        homeBtn.addEventListener('mouseover',()=>{
+            homeBtn.style.boxShadow = '0px 0px 5px 5px rgba(0, 0, 0, 0.2)'
+        });
+        homeBtn.addEventListener('mouseout',()=>{
+            homeBtn.style.boxShadow = ''
+        });
+        genBtn.addEventListener('mouseover',()=>{
+            genBtn.style.boxShadow = '0px 0px 5px 5px rgba(0, 0, 0, 0.2)'
+        });
+        genBtn.addEventListener('mouseout',()=>{
+            genBtn.style.boxShadow = ''
+        });loginBtn.addEventListener('mouseover',()=>{
+            loginBtn.style.boxShadow = '0px 0px 5px 5px rgba(0, 0, 0, 0.2)'
+        });
+        loginBtn.addEventListener('mouseout',()=>{
+            loginBtn.style.boxShadow = ''
+        });
     }
-    
 });
